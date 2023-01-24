@@ -27,7 +27,7 @@
 </script>
 
 <div class="w-96">
-  <div class="relative w-full h-80 overflow-hidden">
+  <div class="group/card relative w-full h-80 overflow-hidden">
     <img
       class="top-0 left-0 w-full h-full object-cover hover:scale-150 ease-in-out duration-500 origin-right"
       src={product.images[0]}
@@ -35,29 +35,29 @@
     />
     <ul class="action absolute top-3 right-3">
       <li
-        class="group flex justify-center items-center m-1 relative list-none bg-white w-10 h-10 p-3 cursor-pointer hover:bg-red-500 hover:text-slate-50 hover:opacity-100"
+        class="group flex justify-center items-center m-1 relative list-none bg-white w-10 h-10 p-3 cursor-pointer translate-x-16 duration-300 delay-75 hover:bg-red-500 hover:text-slate-50 hover:opacity-100 group-hover/card:translate-x-0"
       >
         <FaCartPlus />
         <span
-          class="opacity-0 absolute right-[50px] bg-white text-gray-900 p-2 whitespace-nowrap pointer-events-none group-hover:opacity-100"
+          class="opacity-0 absolute right-[50px] -translate-x-[20px] bg-white text-gray-900 p-2 whitespace-nowrap pointer-events-none duration-500 group-hover:opacity-100 group-hover:translate-x-[0px]"
           >Add to cart</span
         >
       </li>
       <li
-        class="group flex justify-center items-center m-1 relative list-none bg-white w-10 h-10 p-3 cursor-pointer hover:bg-red-500 hover:text-slate-50 hover:opacity-100"
+        class="group flex justify-center items-center m-1 relative list-none bg-white w-10 h-10 p-3 cursor-pointer translate-x-16 duration-300 delay-100 hover:bg-red-500 hover:text-slate-50 hover:opacity-100 group-hover/card:translate-x-0"
       >
         <FaRegEye />
         <span
-          class="opacity-0 absolute right-[50px] bg-white text-gray-900 p-2 whitespace-nowrap pointer-events-none group-hover:opacity-100"
+          class="opacity-0 absolute right-[50px] -translate-x-[20px] bg-white text-gray-900 p-2 whitespace-nowrap pointer-events-none duration-500 group-hover:opacity-100 group-hover:translate-x-[0px]"
           >View details</span
         >
       </li>
       <li
-        class="group flex justify-center items-center m-1 relative list-none bg-white w-10 h-10 p-3 cursor-pointer hover:bg-red-500 hover:text-slate-50 hover:opacity-100"
+        class="group flex justify-center items-center m-1 relative list-none bg-white w-10 h-10 p-3 cursor-pointer translate-x-16 duration-300 delay-150 hover:bg-red-500 hover:text-slate-50 hover:opacity-100 group-hover/card:translate-x-0"
       >
         <FaHeart />
         <span
-          class="opacity-0 absolute right-[50px] bg-white text-gray-900 p-2 whitespace-nowrap pointer-events-none group-hover:opacity-100"
+          class="opacity-0 absolute right-[50px] -translate-x-[20px] bg-white text-gray-900 p-2 whitespace-nowrap pointer-events-none duration-500 group-hover:opacity-100 group-hover:translate-x-[0px]"
           >Add to widh list</span
         >
       </li>
