@@ -5,6 +5,10 @@
   import FaStar from "svelte-icons/fa/FaStar.svelte";
   import type { Product } from "./types";
 
+  export let handleAddToCard;
+  export let handleAddWishList;
+  export let handleLike;
+
   const product: Product = {
     id: 6,
     title: "MacBook Pro",
@@ -36,6 +40,7 @@
     <ul class="action absolute top-3 right-3">
       <li
         class="group flex justify-center items-center m-1 relative list-none bg-white w-10 h-10 p-3 cursor-pointer translate-x-16 duration-300 delay-75 hover:bg-red-500 hover:text-slate-50 hover:opacity-100 group-hover/card:translate-x-0"
+        on:click={handleAddToCard}
       >
         <FaCartPlus />
         <span
@@ -45,6 +50,7 @@
       </li>
       <li
         class="group flex justify-center items-center m-1 relative list-none bg-white w-10 h-10 p-3 cursor-pointer translate-x-16 duration-300 delay-100 hover:bg-red-500 hover:text-slate-50 hover:opacity-100 group-hover/card:translate-x-0"
+        on:click={handleAddWishList}
       >
         <FaRegEye />
         <span
@@ -54,6 +60,7 @@
       </li>
       <li
         class="group flex justify-center items-center m-1 relative list-none bg-white w-10 h-10 p-3 cursor-pointer translate-x-16 duration-300 delay-150 hover:bg-red-500 hover:text-slate-50 hover:opacity-100 group-hover/card:translate-x-0"
+        on:click={handleLike}
       >
         <FaHeart />
         <span

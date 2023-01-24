@@ -6,7 +6,17 @@
   <h1>Vite + Svelte + TS + Tailwindcss</h1>
   <h2>Starter kit</h2>
   <div class="flex justify-center items-center">
-    <ProductItem />
+    <ProductItem
+      handleAddToCard={() => {
+        alert("handleAddToCard callback");
+      }}
+      handleAddWishList={() => {
+        alert("handleAddWishList callback");
+      }}
+      handleLike={() => {
+        alert("handleLike callback");
+      }}
+    />
   </div>
 </main>
 
