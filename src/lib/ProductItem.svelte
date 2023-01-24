@@ -8,6 +8,7 @@
   export let handleAddToCard;
   export let handleAddWishList;
   export let handleLike;
+  export let handleRate;
 
   const product: Product = {
     id: 6,
@@ -78,7 +79,7 @@
     <p class="" />
     <div class="price-rating flex justify-between items-center">
       <h2 class="text-red-600 text-xl font-semibold">{product.price}$</h2>
-      <div class="rating flex flex-wrap">
+      <div class="rating flex flex-wrap" on:click={handleRate}>
         <span class="h-5 text-yellow-400 cursor-pointer">
           <FaStar />
         </span>
